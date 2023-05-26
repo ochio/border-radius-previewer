@@ -20,32 +20,6 @@ const Radius = () => {
             borderRadius: borderRadius,
           }}
         ></div>
-        <div className={styles.stats}>
-          bottomLeft:
-          <label>
-            <input
-              type="number"
-              onChange={(e) =>
-                dispatch(adjustment({ bottomLeft: e.target.value }))
-              }
-              value={bottomLeft}
-              min={0}
-            />
-          </label>
-        </div>
-        <div>
-          bottomRight:
-          <label>
-            <input
-              type="number"
-              onChange={(e) =>
-                dispatch(adjustment({ bottomRight: e.target.value }))
-              }
-              value={bottomRight}
-              min={0}
-            />
-          </label>
-        </div>
         <div>
           topLeft:
           <label>
@@ -68,6 +42,32 @@ const Radius = () => {
                 dispatch(adjustment({ topRight: e.target.value }))
               }
               value={topRight}
+              min={0}
+            />
+          </label>
+        </div>
+        <div>
+          bottomRight:
+          <label>
+            <input
+              type="number"
+              onChange={(e) =>
+                dispatch(adjustment({ bottomRight: e.target.value }))
+              }
+              value={bottomRight}
+              min={0}
+            />
+          </label>
+        </div>
+        <div>
+          bottomLeft:
+          <label>
+            <input
+              type="number"
+              onChange={(e) =>
+                dispatch(adjustment({ bottomLeft: e.target.value }))
+              }
+              value={bottomLeft}
               min={0}
             />
           </label>
